@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="fa" dir="rtl" class="">
+<html lang="fa" dir="rtl" class="dar">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -54,30 +54,34 @@
     </svg>
 
     <header
-      class="fixed top-9 left-0 right-0 flex items-center bg-black/50 px-10 py-5 h-24 w-[90%] mx-auto rounded-3xl"
+      class="fixed top-9 left-0 right-0 flex items-center bg-black/50 px-10 py-5 h-24 w-[90%] mx-auto rounded-3xl backdrop-blur-[6px]"
     >
       <div class="flex justify-between w-full">
         <!--! logo & menu -->
-        <nav class="flex gap-9 items-center">
+        <nav class="flex gap-9 items-center h-14">
           <div class="">
             <img src="./images/app-logo.png" alt="" />
           </div>
           <!--! menu -->
-          <ul class="flex gap-x-9 items-center text-xl text-gray-300">
+          <ul
+            class="flex gap-x-9 items-center text-xl text-gray-300 tracking-tightest h-full"
+          >
             <li>
               <a href="#" class="font-DanaMedium text-orange-200">صفحه اصلی</a>
             </li>
-            <li>
+            <li class="relative group">
               <a href="#">فروشگاه</a>
               <!-- submenu -->
-              <ul class="hidden">
-                <li><a href="#">قهوه ویژه</a></li>
-                <li><a href="#">ویژه در سطح جهانی</a></li>
-                <li><a href="#">قهوه درجه یک</a></li>
-                <li><a href="#">ترکیبات تجاری</a></li>
-                <li><a href="#">قهوه زینو برزیلی </a></li>
-                <li><a href="#">کپسول قهوه </a></li>
-              </ul>
+              <div
+                class="absolute top-full shadow-normal w-52 space-y-4 bg-white dark:bg-zinc-700 p-6 rounded-2xl text-zinc-700 dark:text-white border-t-[3px] border-t-orange-300 tracking-normal transition-all opacity-0 invisible group-hover:opacity-100 group-hover:visible child:block child:transition-colors child-hover:text-orange-300 child:leading-[20px]"
+              >
+                <a href="#">قهوه ویژه</a>
+                <a href="#">ویژه در سطح جهانی</a>
+                <a href="#">قهوه درجه یک</a>
+                <a href="#">ترکیبات تجاری</a>
+                <a href="#">قهوه زینو برزیلی </a>
+                <a href="#">کپسول قهوه </a>
+              </div>
             </li>
             <li><a href="#">دیکشنری</a></li>
             <li><a href="#">بلاگ</a></li>
@@ -104,11 +108,14 @@
           <!-- devide border -->
           <span class="block w-[1px] h-14 bg-orange-200"></span>
           <!-- login & sign up -->
-          <a href="#" class="flex gap-x-2.5 items-center text-orange-200">
+          <a
+            href="#"
+            class="flex gap-x-2.5 items-center text-orange-200 tracking-tightest"
+          >
             <svg class="w-8 h-8 transform rotate-180">
               <use xlink:href="#arrow-left"></use>
             </svg>
-            <span>ورود | ثبت‌ نام  </span>
+            <span>ورود | ثبت‌ نام </span>
           </a>
         </div>
       </div>
