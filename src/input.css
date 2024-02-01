@@ -45,4 +45,17 @@
     background-image: url("../images/headerBgDesktop.webp");
     background-repeat: no-repeat;
   }
+
+  /* ? styling scroll bar*/
+  .scrollbar::-webkit-scrollbar {
+    width: 6px;
+    border-radius: 10px;
+  }
+
+  .scrollbar::-webkit-scrollbar-thumb {
+    background-color: #3f3f46;
+  }
+  .scrollbarDark::-webkit-scrollbar-thumb {
+    background-color: white;
+  }
 }

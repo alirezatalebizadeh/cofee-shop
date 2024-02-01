@@ -94,17 +94,17 @@
     </svg>
 
     <header
-      class="fixed top-9 left-0 right-0 flex items-center bg-black/50 px-10 py-5 h-24 w-[90%] mx-auto rounded-3xl backdrop-blur-[6px]"
+      class="fixed top-9 left-0 right-0 hidden md:flex items-center bg-black/50 p-5 lg:px-10  h-24 w-[98%] lg:w-[90%] mx-auto rounded-3xl backdrop-blur-[6px]"
     >
       <div class="flex justify-between w-full">
         <!-- !logo & menu -->
-        <nav class="flex gap-9 items-center h-14">
-          <div class="">
+        <nav class="flex md:gap-9 items-center h-14">
+          <div class="shrink-0">
             <img src="./images/app-logo.png" alt="" />
           </div>
           <!-- menu -->
           <ul
-            class="flex gap-x-9 items-center text-xl text-gray-300 tracking-tightest h-full"
+            class="flex gap-x-3 lg:gap-x-9 items-center text-xl text-gray-300 tracking-tightest h-full"
           >
             <li>
               <a href="#" class="font-DanaMedium text-orange-200">صفحه اصلی</a>
@@ -133,9 +133,9 @@
         </nav>
 
         <!-- !cart & theme toggle & loggin link -->
-        <div class="flex items-center gap-x-10">
+        <div class="flex items-center gap-x-5 xl:gap-x-10">
           <!--  sweech btn and cart icon -->
-          <div class="flex items-center gap-x-5 text-orange-200">
+          <div class="flex items-center gap-x-3 lg:gap-x-5 text-orange-200">
             <div class="relative group">
               <!-- cart icon hover -->
               <div class="py-3 cursor-pointer">
@@ -162,7 +162,7 @@
 
                 <!-- Cart body -->
                 <div
-                  class="pb-1 border-b border-b-gray-300 dark:border-white/10 divide-y divide-gray-100 dark:divide-white/5 child:pt-5"
+                  class="pb-1 scrollbar dark:scrollbarDark border-b max-h-82 overflow-y-auto border-b-gray-300 dark:border-white/10 divide-y divide-gray-100 dark:divide-white/5 child:pt-5"
                 >
                   <!-- item cart -->
                   <div class="flex gap-x-2.5 py-5">
@@ -194,7 +194,36 @@
                     </div>
                   </div>
 
-                  <div class="hidden flex gap-x-2.5 py-5">
+                  <div class="flex gap-x-2.5 py-5">
+                    <div class="">
+                      <img
+                        class="w-30 h-30"
+                        src="./images/products/p1.png"
+                        alt=""
+                      />
+                    </div>
+                    <div class="">
+                      <h4
+                        class="text-base text-zinc-700 dark:text-white font-DanaMedium line-clamp-2"
+                      >
+                        قهوه اسپرسو بن مانو مدل پریسکا 250 گرمی
+                      </h4>
+                      <div class="mt-5">
+                        <span
+                          class="text-xs text-teal-600 font-DanaMedium dark:text-emerald-500 tracking-tighter leading-6"
+                          >14.500 تومان تخفیف</span
+                        >
+                        <div
+                          class="text-xl text-zinc-700 dark:text-white font-DanaDemiBold"
+                        >
+                          175,000
+                          <span class="text-sm font-Dana">تومان</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="flex gap-x-2.5 py-5">
                     <div class="">
                       <img
                         class="w-30 h-30"
@@ -240,7 +269,7 @@
                   </div>
                   <a
                     href="#"
-                    class="flex items-center justify-center w-36 h-14 rounded-xl bg-teal-600 dark:bg-emerald-500 text-white font-Dana tracking-tightest text-lg"
+                    class="flex items-center justify-center w-36 h-14 rounded-xl bg-teal-600 dark:bg-emerald-500 dark:hover:bg-teal-500 hover:bg-emerald-600 text-white font-Dana tracking-tightest text-lg"
                     >ثبت سفارش
                   </a>
                 </div>
@@ -266,7 +295,7 @@
             <svg class="w-8 h-8 transform rotate-180">
               <use href="#arrow-left"></use>
             </svg>
-            <span>ورود | ثبت‌ نام </span>
+            <span class="hidden xl:inline-block">ورود | ثبت‌ نام </span>
           </a>
         </div>
       </div>
