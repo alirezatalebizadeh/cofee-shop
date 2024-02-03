@@ -23,6 +23,7 @@
       }
     </script>
   </head>
+
   <body class="font-Dana bg-gray-100 dark:bg-zinc-800">
     <!--! all svg icon in site -->
     <svg class="hidden">
@@ -661,14 +662,13 @@
       class="flex items-center justify-between md:hidden text-zinc-700 bg-white dark:bg-zinc-700 px-5 h-16"
     >
       <!-- !Nav-Icon -->
-
       <div class="dark:text-white cursor-pointer">
         <svg class="w-6 h-6 show-nab-btn">
           <use href="#bars-3"></use>
         </svg>
       </div>
 
-      <!-- !Menu  -->
+      <!-- !Nav-Menu  -->
       <div
         class="nav fixed top-0 -right-64 bottom-0 w-64 min-h-screen pt-3 px-4 bg-white dark:bg-zinc-700 z-20 overflow-y-auto transition-all"
       >
@@ -806,11 +806,113 @@
           <use href="#logo-type"></use>
         </svg>
       </div>
+
       <!-- Cart-Icon -->
-      <div class="dark:text-white">
+      <div class="dark:text-white show-cart-btn">
         <svg class="w-6 h-6">
           <use href="#shoping-cart"></use>
         </svg>
+      </div>
+      <!-- !Nav-Menu -->
+      <div
+        class="cart fixed top-0 -left-64 bottom-0 flex flex-col w-64 min-h-screen pt-3 px-5 bg-white dark:bg-zinc-700 z-20 overflow-y-auto transition-all"
+      >
+        <!--! Cart-header -->
+        <div
+          class="flex items-center justify-between pb-5 mb-6 border-b border-b-gray-300 dark:border-b-white/10"
+        >
+          <svg class="w-5 h-5 text-zinc-600 dark:text-white close-cart-btn">
+            <use href="#x-mark"></use>
+          </svg>
+          <span class="text-zinc-600 dark:text-white">سبد خرید</span>
+        </div>
+
+        <!--! Cart-Menu -->
+        <div class="child:pb-5 child:mb-5">
+          <!-- Cart-Item -->
+          <div
+            class="flex gap-x-1 py-5 border-b border-b-gray-100 dark:border-b-white/10"
+          >
+            <img
+              class="w-[90px] h-[90px]"
+              src="./images/products/p1.png"
+              alt=""
+            />
+
+            <div class="">
+              <h4
+                class="text-sm text-zinc-700 dark:text-white font-DanaMedium line-clamp-2"
+              >
+                قهوه اسپرسو بن مانو مدل پریسکا 250 گرمی
+              </h4>
+              <div class="mt-4">
+                <span
+                  class="text-xs text-teal-600 font-Dana dark:text-emerald-500 tracking-tighter leading-6"
+                  >14.500 تومان تخفیف</span
+                >
+                <div
+                  class="text-base text-zinc-700 dark:text-white font-DanaDemiBold"
+                >
+                  175,000
+                  <span class="text-xs font-Dana">تومان</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="flex gap-x-1 py-5 border-b border-b-gray-100 dark:border-b-white/10"
+          >
+            <img
+              class="w-[90px] h-[90px]"
+              src="./images/products/p1.png"
+              alt=""
+            />
+
+            <div class="">
+              <h4
+                class="text-sm text-zinc-700 dark:text-white font-DanaMedium line-clamp-2"
+              >
+                قهوه اسپرسو بن مانو مدل پریسکا 250 گرمی
+              </h4>
+              <div class="mt-4">
+                <span
+                  class="text-xs text-teal-600 font-Dana dark:text-emerald-500 tracking-tighter leading-6"
+                  >14.500 تومان تخفیف</span
+                >
+                <div
+                  class="text-base text-zinc-700 dark:text-white font-DanaDemiBold"
+                >
+                  175,000
+                  <span class="text-xs font-Dana">تومان</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- !Cart-Footer -->
+        <div class="py-8 mt-auto flex justify-between items-end gap-x-4">
+          <a
+            href="#"
+            class="flex items-center justify-center w-28 h-11 rounded-xl bg-teal-600 dark:bg-emerald-500 dark:hover:bg-teal-500 hover:bg-emerald-600 text-white font-Dana tracking-tightest text-lg"
+            >ثبت سفارش
+          </a>
+
+          <div>
+            <div
+              class="text-xs text-gray-300 font-DanaMedium dark:text-white tracking-tighter leading-6"
+            >
+              مبلغ قابل پرداخت
+            </div>
+            <div
+              class="flex items-center gap-x-1.5 text-base text-zinc-700 dark:text-white font-DanaDemiBold"
+            >
+              350000
+              <span class="text-xs font-Dana">تومان</span>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
 
