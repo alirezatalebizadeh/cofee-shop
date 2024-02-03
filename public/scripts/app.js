@@ -34,12 +34,18 @@ function showNavMenu(value) {
     cart.classList.remove("-left-64");
     cart.classList.add("left-0");
     overlay.classList.add("overlay--open");
-    overlay.addEventListener("click", closeCart);
+    overlay.addEventListener("click", () => [
+      overlay.classList.remove("overlay--open"),
+    ]);
   } else if (value === "nav") {
     nav.classList.remove("-right-64");
     nav.classList.add("right-0");
     overlay.classList.add("overlay--open");
-    overlay.addEventListener("click", closeNavbar);
+    overlay.addEventListener("click", () => {
+      overlay.classList.remove("overlay--open");
+      closeNavMenu("cart");
+      closeNavMenu("nav");
+    });
   }
 }
 

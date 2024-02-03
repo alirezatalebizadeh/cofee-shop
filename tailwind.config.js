@@ -30,8 +30,20 @@ module.exports = {
         tightest: "-.065em",
       },
       spacing: {
-        "30": "7.5rem",
-        "82": "20.5rem"
+        30: "7.5rem",
+        82: "20.5rem",
+      },
+    },
+    screens: {
+      sm: "480px",
+      md: "768px",
+      lg: "976px",
+      xl: "1440px",
+    },
+    container: {
+      padding: {
+        DEFAULT: "1rem",
+        lg: "0.625rem",
       },
     },
   },
