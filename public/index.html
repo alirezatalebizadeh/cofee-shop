@@ -93,8 +93,9 @@
       </symbol>
     </svg>
 
+    <!-- !header desktop -->
     <header
-      class="fixed top-9 left-0 right-0 hidden md:flex items-center bg-black/50 p-5 lg:px-10  h-24 w-[98%] lg:w-[90%] mx-auto rounded-3xl backdrop-blur-[6px]"
+      class="fixed top-9 left-0 right-0 hidden md:flex items-center bg-black/50 p-5 lg:px-10 h-24 w-[98%] lg:w-[90%] mx-auto rounded-3xl backdrop-blur-[6px]"
     >
       <div class="flex justify-between w-full">
         <!-- !logo & menu -->
@@ -276,7 +277,7 @@
               </div>
             </div>
             <!-- theme sweech btn -->
-            <div class="cursor-pointer" id="toggle-theme">
+            <div class="cursor-pointer toggle-theme">
               <svg class="inline-block dark:hidden w-8 h-8">
                 <use href="#moon"></use>
               </svg>
@@ -301,6 +302,97 @@
       </div>
     </header>
 
+    <!-- !header mobile -->
+    <div
+      class="flex items-center justify-between md:hidden text-zinc-700 bg-white dark:bg-zinc-700 px-5 h-16"
+    >
+      <!-- !Nav-Icon -->
+
+      <div class="dark:text-white cursor-pointer">
+        <svg class="w-6 h-6">
+          <use href="#shoping-cart"></use>
+        </svg>
+      </div>
+
+      <!-- !Menu -->
+      <div
+        class="fixed top-0 right-0 bottom-0 w-64 min-h-screen pt-3 px-4 bg-white dark:bg-zinc-700 z-20"
+      >
+        <!-- Nav-header -->
+        <div
+          class="flex items-center justify-between pb-5 mb-6 border-b border-b-gray-100 dark:border-b-white/10"
+        >
+          <div class="flex items-center gap-x-3.5 text-orange-300">
+            <svg class="w-[41px] h-10">
+              <use href="#shoping-cart"></use>
+            </svg>
+            <svg class="w-[100px] h-10">
+              <use href="#shoping-cart"></use>
+            </svg>
+          </div>
+          <div class="">
+            <svg class="w-5 h-5 text-zinc-600 dark:text-white">
+              <use href="#shoping-cart"></use>
+            </svg>
+          </div>
+        </div>
+        <!-- Nav-Menu -->
+
+        <!-- Nav-Footer -->
+        <div
+          class="pt-8 mt-8 space-y-6 border-t border-t-gray-100 dark:border-t-white/10"
+        >
+          <a
+            href="#"
+            class="flex gap-x-2.5 items-center text-orange-300 tracking-tightest"
+          >
+            <svg class="w-5 h-5">
+              <use href="#arrow-left"></use>
+            </svg>
+            <span>ورود | ثبت‌ نام </span>
+          </a>
+
+          <div
+            class="inline-flex items-center gap-x-2 dark:hidden text-orange-300 toggle-theme cursor-pointer"
+          >
+            <svg class="w-5 h-5">
+              <use href="#moon"></use>
+            </svg>
+            <span>حالت تیره</span>
+          </div>
+          <div
+            class="hidden dark:inline-flex items-center gap-x-2 text-orange-300 toggle-theme cursor-pointer"
+          >
+            <svg class="w-5 h-5">
+              <use href="#sun"></use>
+            </svg>
+            <span>حالت روشن</span>
+          </div>
+
+          <a href="#" class="text-orange-300 flex items-center gap-x-2">
+            <svg class="w-5 h-5">
+              <use href="#shoping-cart"></use>
+            </svg>
+            <span>سبد خرید</span>
+          </a>
+        </div>
+      </div>
+
+      <!-- Logo-Icon -->
+      <div class="w-[138px] h-10 text-orange-300">
+        <img class="w-full h-full" src="./images/app-logo.png" alt="" />
+      </div>
+      <!-- Cart-Icon -->
+      <div class="dark:text-white">
+        <svg class="w-6 h-6">
+          <use href="#shoping-cart"></use>
+        </svg>
+      </div>
+    </div>
+
+    <div
+      class="overlay fixed inset-0 w-full h-full md:hidden bg-black/40 z-10"
+    ></div>
     <script src="./scripts/app.js"></script>
   </body>
 </html>
