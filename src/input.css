@@ -29,18 +29,21 @@
       format("woff2");
     font-display: swap;
   }
+
   @font-face {
     font-family: "Morabba Medium";
     src: local("Morabba") url("../fonts/Morabba/Morabba-Medium.woff2")
       format(".woff2");
     font-display: swap;
   }
+
   @font-face {
     font-family: "Morabba Bold";
     src: local("Morabba") url("../fonts/Morabba/Morabba-Bold.woff2")
       format(".woff2");
     font-display: swap;
   }
+
   body {
     background-image: url("../images/headerBgDesktop.webp");
     background-repeat: no-repeat;
@@ -57,5 +60,35 @@
   }
   .scrollbarDark::-webkit-scrollbar-thumb {
     background-color: white;
+  }
+}
+
+@layer components {
+  /* styleing to sub menu */
+  .submenu {
+    @apply flex flex-col gap-y-3 pr-7 mt-3 text-sm text-zinc-600 dark:text-white;
+  }
+
+  .summenu_item_active {
+    @apply relative text-orange-300 pr-2.5
+    /* position: relative;
+    color: #fdba74;
+    padding-right: 10px; */;
+  }
+
+  .summenu_item_active::after {
+    content: "";
+    @apply block w-1 h-1 text-orange-300 absolute right-0 top-0 bottom-0;
+    border-radius: 100px;
+
+    /* display: block;
+    width: 4px;
+    height: 4px;
+    background-color: #fdba74;
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto; */
   }
 }
