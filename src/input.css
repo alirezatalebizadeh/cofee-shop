@@ -66,20 +66,25 @@
 @layer components {
   /* styleing to sub menu */
   .submenu {
-    @apply flex flex-col gap-y-3 pr-7 mt-3 text-sm text-zinc-600 dark:text-white;
+    @apply hidden flex-col gap-y-3 pr-7 mt-3 text-sm text-zinc-600 dark:text-white;
+  }
+
+  .submenu-open {
+    @apply flex;
   }
 
   .summenu_item_active {
-    @apply relative text-orange-300 pr-2.5
+    @apply relative text-orange-300 pr-2.5;
     /* position: relative;
     color: #fdba74;
-    padding-right: 10px; */;
+    padding-right: 10px; */
   }
 
   .summenu_item_active::after {
     content: "";
     @apply block w-1 h-1 text-orange-300 absolute right-0 top-0 bottom-0;
     border-radius: 100px;
+    margin: auto;
 
     /* display: block;
     width: 4px;
@@ -90,5 +95,12 @@
     top: 0;
     bottom: 0;
     margin: auto; */
+  }
+
+  .overlay {
+    @apply invisible opacity-0 fixed inset-0 w-full h-full md:hidden bg-black/40 z-10 transition-all;
+  }
+  .overlay--open {
+    @apply visible opacity-100;
   }
 }

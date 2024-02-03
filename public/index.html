@@ -199,6 +199,21 @@
           d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
         />
       </symbol>
+      <!-- chevron-down-->
+      <symbol
+        id="chevron-down"
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke-width="1.5"
+        stroke="currentColor"
+      >
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          d="m19.5 8.25-7.5 7.5-7.5-7.5"
+        />
+      </symbol>
       <!-- logo -->
       <symbol
         id="logo"
@@ -648,14 +663,14 @@
       <!-- !Nav-Icon -->
 
       <div class="dark:text-white cursor-pointer">
-        <svg class="w-6 h-6">
+        <svg class="w-6 h-6 show-nab-btn">
           <use href="#bars-3"></use>
         </svg>
       </div>
 
       <!-- !Menu  -->
       <div
-        class="fixed top-0 right-0 bottom-0 w-64 min-h-screen pt-3 px-4 bg-white dark:bg-zinc-700 z-20"
+        class="nav fixed top-0 -right-64 bottom-0 w-64 min-h-screen pt-3 px-4 bg-white dark:bg-zinc-700 z-20 overflow-y-auto transition-all"
       >
         <!-- Nav-header -->
         <div
@@ -663,15 +678,15 @@
         >
           <div class="flex items-center gap-x-3.5 text-orange-300">
             <svg class="w-[41px] h-10">
-              <use href="#shoping-cart"></use>
+              <use href="#logo"></use>
             </svg>
             <svg class="w-[100px] h-10">
-              <use href="#shoping-cart"></use>
+              <use href="#logo-type"></use>
             </svg>
           </div>
           <div class="">
-            <svg class="w-5 h-5 text-zinc-600 dark:text-white">
-              <use href="#shoping-cart"></use>
+            <svg class="w-5 h-5 text-zinc-600 dark:text-white close-nab-btn">
+              <use href="#x-mark"></use>
             </svg>
           </div>
         </div>
@@ -696,8 +711,8 @@
                 </svg>
                 فروشگاه
               </a>
-              <svg class="w-5 h-5 submenu_open_btn">
-                <use href="#shoping-cart"></use>
+              <svg class="w-5 h-5 submenu_open_btn cursor-pointer">
+                <use href="#chevron-down"></use>
               </svg>
             </div>
             <!-- submenu -->
@@ -747,13 +762,13 @@
 
         <!-- Nav-Footer -->
         <div
-          class="pt-8 mt-8 space-y-6 border-t border-t-gray-100 dark:border-t-white/10 pr-2.5"
+          class="py-8 mt-8 space-y-6 border-t border-t-gray-100 dark:border-t-white/10 pr-2.5"
         >
           <a
             href="#"
             class="flex gap-x-2.5 items-center text-orange-300 tracking-tightest"
           >
-            <svg class="w-5 h-5">
+            <svg class="w-5 h-5 transform rotate-180">
               <use href="#arrow-left"></use>
             </svg>
             <span>ورود | ثبت‌ نام </span>
@@ -800,9 +815,7 @@
     </div>
 
     <!-- overlay  -->
-    <div
-      class="overlay fixed inset-0 w-full h-full md:hidden bg-black/40 z-10"
-    ></div>
+    <div class="overlay"></div>
     <script src="./scripts/app.js"></script>
   </body>
 </html>
