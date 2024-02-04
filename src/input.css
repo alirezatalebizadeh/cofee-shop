@@ -93,4 +93,20 @@
   .overlay--open {
     @apply visible opacity-100;
   }
+
+  .circle {
+    @apply flex items-center justify-center border rounded-full;
+  }
+  .circle-main {
+    @apply absolute bottom-0 right-0 left-0 mx-auto  translate-y-1/2 hidden md:flex;
+  }
+  .circle-lg {
+    @apply w-[203px] h-[203px] border-white/25;
+  }
+  .circle_md {
+    @apply w-[145px] h-[145px] border-white/50;
+  }
+  .circle_sm {
+    @apply w-[95px] h-[95px] border-white/80;
+  }
 }

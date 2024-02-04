@@ -24,7 +24,7 @@
     </script>
   </head>
 
-  <body class="font-Dana bg-gray-100 dark:bg-zinc-800">
+  <body class="font-Dana bg-gray-100 dark:bg-zinc-800 h-[2000px]">
     <!--! all svg icon in site -->
     <svg class="hidden">
       <symbol
@@ -445,12 +445,20 @@
           </clipPath>
         </defs>
       </symbol>
-      <!--  -->
+      <!-- curve -->
+      <symbol
+        id="curve"
+        viewBox="0 0 100 22"
+        fill="currentColor"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path d="M50 0C69 0 81 22 100 22L0 22C18.75 22 31 0 50 0Z" />
+      </symbol>
     </svg>
 
     <!-- !header desktop -->
     <header
-      class="fixed top-9 left-0 right-0 hidden md:flex items-center bg-black/50 p-5 lg:px-10 h-24 w-[98%] lg:w-[90%] mx-auto rounded-3xl backdrop-blur-[6px]"
+      class="fixed top-9 left-0 right-0 z-50 hidden md:flex items-center bg-black/50 p-5 lg:px-10 h-24 w-[98%] lg:w-[90%] mx-auto rounded-3xl backdrop-blur-[6px]"
     >
       <div class="flex justify-between w-full">
         <!-- !logo & menu -->
@@ -919,9 +927,12 @@
     <!-- !App Main -->
     <main>
       <section
-        class="home h-[200px] xs:h-auto bg-home-mobile md:bg-home-desktop bg-cover bg-no-repeat bg-[item-top]"
+        class="home relative h-[200px] xs:h-auto xs:aspect-[2/1] md:aspect-auto bg-home-mobile md:bg-home-desktop bg-cover bg-no-repeat bg-[item-top]"
       >
-        <div class="container md:min-h-screen flex items-center justify-end">
+        <!-- text -->
+        <div
+          class="container relative overflow-y-hidden md:min-h-screen flex items-center justify-end"
+        >
           <div class="text-white">
             <h2
               class="font-MorabbaBold text-2xl leading-8 md:text-6xl mb-0.5 md:mb-2 md:leading-[62px]"
@@ -942,6 +953,27 @@
               است که در نواحی مختلف کمربند قهوه کشت میشود.
             </p>
           </div>
+          <!-- Circle -->
+          <div class="circle circle-main circle-lg">
+            <div class="circle circle_md">
+              <div class="circle circle_sm"></div>
+            </div>
+          </div>
+        </div>
+        <!-- Curve icon -->
+        <svg
+          class="w-[100px] h-11 absolute left-0 right-0 bottom-2 mx-auto translate-y-1/2 hidden md:inline-block text-gray-100 dark:text-zinc-800"
+        >
+          <use href="#curve"></use>
+        </svg>
+
+        <!-- chevron-down icom-->
+        <div
+          class="hidden md:flex items-center justify-center w-[30px] h-[30px] absolute left-0 right-0 bottom-0 mx-auto translate-y-1/2 dark:text-white border-2 border-orange-300 rounded-full"
+        >
+          <svg class="w-4 h-4 text-gray-700 dark:text-white">
+            <use href="#chevron-down"></use>
+          </svg>
         </div>
       </section>
     </main>
