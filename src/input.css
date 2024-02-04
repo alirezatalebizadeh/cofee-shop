@@ -21,34 +21,27 @@
   }
 
   /* ----- morabba------ */
-  /* //TODO refactor font. does not work now */
 
   @font-face {
     font-family: "Morabba Light";
-    src: local("Morabba") url("../fonts/Morabba/Morabba-Light.woff2")
-      format("woff2");
+    src: url("../fonts/Morabba/Morabba-Light.woff2") format("woff2");
     font-display: swap;
   }
 
   @font-face {
     font-family: "Morabba Medium";
-    src: local("Morabba") url("../fonts/Morabba/Morabba-Medium.woff2")
-      format(".woff2");
+    src: url("../fonts/Morabba/Morabba-Medium.woff2") format("woff2");
     font-display: swap;
   }
 
   @font-face {
     font-family: "Morabba Bold";
-    src: local("Morabba") url("../fonts/Morabba/Morabba-Bold.woff2")
-      format(".woff2");
+    src: url("../fonts/Morabba/Morabba-Bold.woff2") format("woff2");
     font-display: swap;
   }
+}
 
-  body {
-    background-image: url("../images/headerBgDesktop.webp");
-    background-repeat: no-repeat;
-  }
-
+@layer components {
   /* ? styling scroll bar*/
   .scrollbar::-webkit-scrollbar {
     width: 6px;
@@ -61,9 +54,6 @@
   .scrollbarDark::-webkit-scrollbar-thumb {
     background-color: white;
   }
-}
-
-@layer components {
   /* styleing to sub menu */
   .submenu {
     @apply hidden flex-col gap-y-3 pr-7 mt-3 text-sm text-zinc-600 dark:text-white;
