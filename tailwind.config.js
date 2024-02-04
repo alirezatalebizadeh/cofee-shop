@@ -34,7 +34,7 @@ module.exports = {
         82: "20.5rem",
       },
       backgroundImage: {
-        "home-desktop": "url('../images/headerBgDesktop.webp')",
+        "home-desktop": "url('../images/headerBgDesktop.png')",
         "home-mobile": "url('../images/headerBgMobile.webp')",
       },
     },

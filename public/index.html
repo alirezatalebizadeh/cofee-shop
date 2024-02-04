@@ -27,6 +27,22 @@
   <body class="font-Dana bg-gray-100 dark:bg-zinc-800 h-[2000px]">
     <!--! all svg icon in site -->
     <svg class="hidden">
+      <!-- chevron-left -->
+      <symbol
+        id="chevron-left"
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke-width="1.5"
+        stroke="currentColor"
+      >
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          d="M15.75 19.5 8.25 12l7.5-7.5"
+        />
+      </symbol>
+
       <symbol
         id="shoping-cart"
         xmlns="http://www.w3.org/2000/svg"
@@ -926,14 +942,16 @@
 
     <!-- !App Main -->
     <main>
+      <!-- !Home //TODO styling to best responsive-->
+
       <section
         class="home relative h-[200px] xs:h-auto xs:aspect-[2/1] md:aspect-auto bg-home-mobile md:bg-home-desktop bg-cover bg-no-repeat bg-[item-top]"
       >
         <!-- text -->
         <div
-          class="container relative overflow-y-hidden md:min-h-screen flex items-center justify-end"
+          class="container relative overflow-y-hidden h-[100%] md:min-h-screen flex items-center justify-end"
         >
-          <div class="text-white">
+          <div class="text-white mt-[15px]">
             <h2
               class="font-MorabbaBold text-2xl leading-8 md:text-6xl mb-0.5 md:mb-2 md:leading-[62px]"
             >
@@ -944,7 +962,7 @@
               >یک فنجان بالانس !</span
             >
             <span
-              class="block w-[100px] h-px md:h-0.5 my-3 md:my-5 text-orange-300"
+              class="block w-[100px] h-px md:h-0.5 my-2 md:my-5 text-orange-300"
             ></span>
             <p
               class="max-w-[201px] font-Dana md:max-w-[460px] md:text-2xl font-Dana"
@@ -974,6 +992,25 @@
           <svg class="w-4 h-4 text-gray-700 dark:text-white">
             <use href="#chevron-down"></use>
           </svg>
+        </div>
+      </section>
+
+      <!-- !Products -->
+      <section class="products pt-8 md:pt-48">
+        <div class="container">
+          <div class="flex items-end justify-between">
+            <div class="">
+              <h3 class="section_title">جدیدترین محصولات</h3>
+              <span class="section_subTitle">فرآوری شده از دانه قهوه</span>
+            </div>
+            <a href="#" class="section_link">
+              <span class="hidden md:inline-block">مشاهده همه محصولات</span>
+              <span class="inline-block md:hidden">مشاهده همه </span>
+              <svg class="w-5 h-5">
+                <use href="#chevron-left"></use>
+              </svg>
+            </a>
+          </div>
         </div>
       </section>
     </main>
