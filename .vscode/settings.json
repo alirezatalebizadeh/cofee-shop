@@ -2,5 +2,7 @@
   "emmet.preferences": {
     "Editor: Insert Spaces": true,
     "Editor: Format On Save": true
-  }
+  },
+  "editor.formatOnPaste": true,
+  "html.format.contentUnformatted": ""
 }
