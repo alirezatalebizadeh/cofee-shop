@@ -34,17 +34,19 @@ function showNavMenu(value) {
     cart.classList.remove("-left-64");
     cart.classList.add("left-0");
     overlay.classList.add("overlay--open");
-    overlay.addEventListener("click", () => [
-      overlay.classList.remove("overlay--open"),
-    ]);
+    overlay.addEventListener("click", () => {
+      overlay.classList.remove("overlay--open");
+      closeNavMenu("nav");
+      closeNavMenu("cart");
+    });
   } else if (value === "nav") {
     nav.classList.remove("-right-64");
     nav.classList.add("right-0");
     overlay.classList.add("overlay--open");
     overlay.addEventListener("click", () => {
       overlay.classList.remove("overlay--open");
-      closeNavMenu("cart");
       closeNavMenu("nav");
+      closeNavMenu("cart");
     });
   }
 }
@@ -55,16 +57,10 @@ function closeNavMenu(val) {
     cart.classList.remove("left-0");
     cart.classList.add("-left-64");
     overlay.classList.remove("overlay--open");
-    overlay.addEventListener("click", () => {
-      overlay.classList.remove("overlay--open");
-    });
   } else if (val === "nav") {
     nav.classList.remove("right-0");
     nav.classList.add("-right-64");
     overlay.classList.remove("overlay--open");
-    overlay.addEventListener("click", () => {
-      overlay.classList.remove("overlay--open");
-    });
   }
 }
 
