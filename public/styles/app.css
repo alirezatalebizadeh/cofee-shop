@@ -1417,12 +1417,12 @@ video {
        column-gap: 29px;
 }
 
-.gap-y-\[135px\] {
-  row-gap: 135px;
-}
-
 .gap-y-\[55px\] {
   row-gap: 55px;
+}
+
+.gap-y-\[35px\] {
+  row-gap: 35px;
 }
 
 .gap-y-\[34px\] {
@@ -1431,6 +1431,16 @@ video {
 
 .gap-y-\[5px\] {
   row-gap: 5px;
+}
+
+.gap-x-\[25px\] {
+  -moz-column-gap: 25px;
+       column-gap: 25px;
+}
+
+.gap-x-\[21px\] {
+  -moz-column-gap: 21px;
+       column-gap: 21px;
 }
 
 .space-y-4 > :not([hidden]) ~ :not([hidden]) {
