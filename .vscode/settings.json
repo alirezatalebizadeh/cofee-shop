@@ -4,5 +4,6 @@
     "Editor: Format On Save": true
   },
   "editor.formatOnPaste": true,
-  "html.format.contentUnformatted": ""
+  "html.format.contentUnformatted": "",
+  "editor.wordWrap": "bounded"
 }
