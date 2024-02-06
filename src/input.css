@@ -110,7 +110,7 @@
     @apply w-[95px] h-[95px] border-white/80;
   }
 
-  /* Products - section */
+  /* !Products - section */
   @media screen and (min-width: 1280px) {
     html.dark .products {
       background-image: url("../images/product-bg.png");
@@ -148,6 +148,27 @@
     height: 1px;
     @apply absolute inset-0 m-auto bg-red-500;
     top: -2px;
+  }
+  /* !banner's style */
+  .category-banner-item1 {
+    background: linear-gradient(
+        270deg,
+        rgba(0, 0, 0, 0.6) 33.85%,
+        rgba(245, 245, 245, 0.1) 100%
+      ),
+      url("../images/categories/category-right.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .category-banner-item2 {
+    background: linear-gradient(
+        270deg,
+        rgba(0, 0, 0, 0.6) 33.85%,
+        rgba(245, 245, 245, 0.1) 100%
+      ),
+      url("../images/categories/category-left.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
   }
 }
 
