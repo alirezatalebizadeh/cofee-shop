@@ -28,6 +28,20 @@
   <body class="font-Dana bg-gray-100 dark:bg-zinc-800">
     <!--! all svg icon in site -->
     <svg class="hidden">
+      <!--  arrow-left-blog-->
+      <symbol
+        id="arrow-left-blog"
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 24 24"
+        fill="currentColor"
+      >
+        <path
+          fill-rule="evenodd"
+          d="M11.03 3.97a.75.75 0 0 1 0 1.06l-6.22 6.22H21a.75.75 0 0 1 0 1.5H4.81l6.22 6.22a.75.75 0 1 1-1.06 1.06l-7.5-7.5a.75.75 0 0 1 0-1.06l7.5-7.5a.75.75 0 0 1 1.06 0Z"
+          clip-rule="evenodd"
+        />
+      </symbol>
+
       <!-- Activity -->
       <symbol
         id="Activity"
@@ -2477,18 +2491,18 @@
           </div>
           <!-- !blog-Content -->
           <div
-            class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-3 md:gap-5"
+            class="grid grid-col-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3 md:gap-5"
           >
             <!-- !Blog-item -->
             <div
-              class="bg-white dark:bg-zinc-700 rounded-2xl overflow-hidden md:w-[300px] md:h-[285px] shadow-normal p-[10px] group"
+              class="bg-white flex justify-between sm:flex-col dark:bg-zinc-700 rounded-2xl overflow-hidden sm:max-w-[358px] sm:h-[285px] shadow-normal p-[10px] group"
             >
               <div
-                class="relative rounded-2xl rounded-bl-4xl overflow-hidden transition-all ml-3  md:ml-0 md:mb-[10px]"
+                class="relative w-[129px] h-[129px] sm:w-full sm:h-50 rounded-2xl rounded-bl-4xl overflow-hidden transition-all ml-3 sm:ml-0 md:mb-[10px]"
               >
                 <img
                   src="./images/blogs/blog-1.png"
-                  class="w-full h-full"
+                  class="w-full h-full object-cover"
                   alt="Blog-1"
                 />
                 <div
@@ -2501,18 +2515,243 @@
                   </svg>
                 </div>
               </div>
-              <div class="flex items-center">
-                <h2 class="text-zinc-700 dark:text-white font-Dana md:text-lg/7 md:max-h-[51px] line-clamp-2 ">طرز تهیه قهوه دمی با دستگاه اروپرس</h2>
-                <div class="flex md:mr-5">
-                  <span class="block w-px h-[61px] bg-gray-100 dark:bg-white/10"></span>
-                  <div class="flex flex-col text-left text-teal-600 md:text-2xl/normal md:pr-5 md:mr-5 md:ml-[18px]">
+
+              <div
+                class="flex flex-col gap-y-[18px] justify-between sm:flex-row items-center sm:mt-[10px]"
+              >
+                <h2
+                  class="text-zinc-700 dark:text-white font-Dana md:text-lg/7 pl-4 sm:pl-0 sm:max-h-[51px] line-clamp-2 lg:mr-[10px]"
+                >
+                  طرز تهیه قهوه دمی با دستگاه اروپرس
+                </h2>
+                <!-- !tablet template -->
+                <div class="hidden sm:flex sm:mr-2 xl:mr-5 sm:ml-[10px]">
+                  <span
+                    class="block w-px h-[61px] bg-gray-100 dark:bg-white/10"
+                  ></span>
+                  <div
+                    class="hidden sm:flex flex-col text-left text-teal-600 md:text-2xl/normal sm:pr-4 sm:mr-4 lg:pr-5"
+                  >
                     <span class="font-DanaDemiBold md:text-2xl/normal">21</span>
                     <span class="md:text-sm/normal font-Dana">مرداد</span>
                     <span class="md:text-sm/normal font-Dana">1402</span>
                   </div>
                 </div>
+                <span
+                  class="block sm:hidden w-full h-px bg-gray-100 dark:bg-white/10"
+                ></span>
+                <!-- !Mobile Template -->
+                <div
+                  class="flex sm:hidden w-full items-center justify-between text-left text-teal-600"
+                >
+                  <span class="font-Dana text-xs/normal">21 مرداد 1402</span>
+                  <a
+                    href="#"
+                    class="flex items-center gap-x-[6px] py-0.5 px-2 bg-orange-200/20 rounded-md text-xs/normal font-DanaMedium text-orange-300"
+                  >
+                    مطالعه
+                    <svg class="h-4 w-4">
+                      <use href="#arrow-left-blog"></use>
+                    </svg>
+                  </a>
+                </div>
               </div>
             </div>
+            <!-- ! -->
+
+            <div
+              class="bg-white flex justify-between sm:flex-col dark:bg-zinc-700 rounded-2xl overflow-hidden sm:max-w-[358px] sm:h-[285px] shadow-normal p-[10px] group"
+            >
+              <div
+                class="relative w-[129px] h-[129px] sm:w-full sm:h-50 rounded-2xl rounded-bl-4xl overflow-hidden transition-all ml-3 sm:ml-0 md:mb-[10px]"
+              >
+                <img
+                  src="./images/blogs/blog-2.png"
+                  class="w-full h-full object-cover"
+                  alt="Blog-1"
+                />
+                <div
+                  class="absolute inset-0 w-full h-full bg-gradient-to-r from-orange-200/80 to-orange-300/80 hidden md:flex-center opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all delay-75"
+                >
+                  <svg
+                    class="text-amber-900 w-[84px] h-[32px] md:w-[138px] md:h-[54px]"
+                  >
+                    <use href="#logo-type"></use>
+                  </svg>
+                </div>
+              </div>
+
+              <div
+                class="flex flex-col gap-y-[18px] justify-between sm:flex-row items-center sm:mt-[10px]"
+              >
+                <h2
+                  class="text-zinc-700 dark:text-white font-Dana md:text-lg/7 pl-4 sm:pl-0 sm:max-h-[51px] line-clamp-2 lg:mr-[10px]"
+                >
+                 یک نوشیدنی هیجان انگیز و پرکالری برای شروع روز
+                </h2>
+                <!-- !tablet template -->
+                <div class="hidden sm:flex sm:mr-2 xl:mr-5 sm:ml-[10px]">
+                  <span
+                    class="block w-px h-[61px] bg-gray-100 dark:bg-white/10"
+                  ></span>
+                  <div
+                    class="hidden sm:flex flex-col text-left text-teal-600 md:text-2xl/normal sm:pr-4 sm:mr-4 lg:pr-5"
+                  >
+                    <span class="font-DanaDemiBold md:text-2xl/normal">21</span>
+                    <span class="md:text-sm/normal font-Dana">مرداد</span>
+                    <span class="md:text-sm/normal font-Dana">1402</span>
+                  </div>
+                </div>
+                <span
+                  class="block sm:hidden w-full h-px bg-gray-100 dark:bg-white/10"
+                ></span>
+                <!-- !Mobile Template -->
+                <div
+                  class="flex sm:hidden w-full items-center justify-between text-left text-teal-600"
+                >
+                  <span class="font-Dana text-xs/normal">21 مرداد 1402</span>
+                  <a
+                    href="#"
+                    class="flex items-center gap-x-[6px] py-0.5 px-2 bg-orange-200/20 rounded-md text-xs/normal font-DanaMedium text-orange-300"
+                  >
+                    مطالعه
+                    <svg class="h-4 w-4">
+                      <use href="#arrow-left-blog"></use>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <!-- ! -->
+
+            <div
+              class="bg-white flex justify-between sm:flex-col dark:bg-zinc-700 rounded-2xl overflow-hidden sm:max-w-[358px] sm:h-[285px] shadow-normal p-[10px] group"
+            >
+              <div
+                class="relative w-[129px] h-[129px] sm:w-full sm:h-50 rounded-2xl rounded-bl-4xl overflow-hidden transition-all ml-3 sm:ml-0 md:mb-[10px]"
+              >
+                <img
+                  src="./images/blogs/blog-3.png"
+                  class="w-full h-full object-cover"
+                  alt="Blog-1"
+                />
+                <div
+                  class="absolute inset-0 w-full h-full bg-gradient-to-r from-orange-200/80 to-orange-300/80 hidden md:flex-center opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all delay-75"
+                >
+                  <svg
+                    class="text-amber-900 w-[84px] h-[32px] md:w-[138px] md:h-[54px]"
+                  >
+                    <use href="#logo-type"></use>
+                  </svg>
+                </div>
+              </div>
+
+              <div
+                class="flex flex-col gap-y-[18px] justify-between sm:flex-row items-center sm:mt-[10px]"
+              >
+                <h2
+                  class="text-zinc-700 dark:text-white font-Dana md:text-lg/7 pl-4 sm:pl-0 sm:max-h-[51px] line-clamp-2 lg:mr-[10px]"
+                >
+                   طرز تهیه یک فنجان کافه زینو برزیلی
+                </h2>
+                <!-- !tablet template -->
+                <div class="hidden sm:flex sm:mr-2 xl:mr-5 sm:ml-[10px]">
+                  <span
+                    class="block w-px h-[61px] bg-gray-100 dark:bg-white/10"
+                  ></span>
+                  <div
+                    class="hidden sm:flex flex-col text-left text-teal-600 md:text-2xl/normal sm:pr-4 sm:mr-4 lg:pr-5"
+                  >
+                    <span class="font-DanaDemiBold md:text-2xl/normal">21</span>
+                    <span class="md:text-sm/normal font-Dana">مرداد</span>
+                    <span class="md:text-sm/normal font-Dana">1402</span>
+                  </div>
+                </div>
+                <span
+                  class="block sm:hidden w-full h-px bg-gray-100 dark:bg-white/10"
+                ></span>
+                <!-- !Mobile Template -->
+                <div
+                  class="flex sm:hidden w-full items-center justify-between text-left text-teal-600"
+                >
+                  <span class="font-Dana text-xs/normal">21 مرداد 1402</span>
+                  <a
+                    href="#"
+                    class="flex items-center gap-x-[6px] py-0.5 px-2 bg-orange-200/20 rounded-md text-xs/normal font-DanaMedium text-orange-300"
+                  >
+                    مطالعه
+                    <svg class="h-4 w-4">
+                      <use href="#arrow-left-blog"></use>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <!-- ! -->
+            <div
+              class="bg-white flex justify-between sm:flex-col dark:bg-zinc-700 rounded-2xl overflow-hidden sm:max-w-[358px] sm:h-[285px] shadow-normal p-[10px] group"
+            >
+              <div
+                class="relative w-[129px] h-[129px] sm:w-full sm:h-50 rounded-2xl rounded-bl-4xl overflow-hidden transition-all ml-3 sm:ml-0 md:mb-[10px]"
+              >
+                <img
+                  src="./images/blogs/blog-4.png"
+                  class="w-full h-full object-cover"
+                  alt="Blog-1"
+                />
+                <div
+                  class="absolute inset-0 w-full h-full bg-gradient-to-r from-orange-200/80 to-orange-300/80 hidden md:flex-center opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all delay-75"
+                >
+                  <svg
+                    class="text-amber-900 w-[84px] h-[32px] md:w-[138px] md:h-[54px]"
+                  >
+                    <use href="#logo-type"></use>
+                  </svg>
+                </div>
+              </div>
+
+              <div
+                class="flex flex-col gap-y-[18px] justify-between sm:flex-row items-center sm:mt-[10px]"
+              >
+                <h2
+                  class="text-zinc-700 dark:text-white font-Dana md:text-lg/7 pl-4 sm:pl-0 sm:max-h-[51px] line-clamp-2 lg:mr-[10px]"
+                >
+                  طرز تهیه قهوه دالگونا مناسب روز‌های کرونایی
+                </h2>
+                <!-- !tablet template -->
+                <div class="hidden sm:flex sm:mr-2 xl:mr-5 sm:ml-[10px]">
+                  <span
+                    class="block w-px h-[61px] bg-gray-100 dark:bg-white/10"
+                  ></span>
+                  <div
+                    class="hidden sm:flex flex-col text-left text-teal-600 md:text-2xl/normal sm:pr-4 sm:mr-4 lg:pr-5"
+                  >
+                    <span class="font-DanaDemiBold md:text-2xl/normal">21</span>
+                    <span class="md:text-sm/normal font-Dana">مرداد</span>
+                    <span class="md:text-sm/normal font-Dana">1402</span>
+                  </div>
+                </div>
+                <span
+                  class="block sm:hidden w-full h-px bg-gray-100 dark:bg-white/10"
+                ></span>
+                <!-- !Mobile Template -->
+                <div
+                  class="flex sm:hidden w-full items-center justify-between text-left text-teal-600"
+                >
+                  <span class="font-Dana text-xs/normal">21 مرداد 1402</span>
+                  <a
+                    href="#"
+                    class="flex items-center gap-x-[6px] py-0.5 px-2 bg-orange-200/20 rounded-md text-xs/normal font-DanaMedium text-orange-300"
+                  >
+                    مطالعه
+                    <svg class="h-4 w-4">
+                      <use href="#arrow-left-blog"></use>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <!-- ! -->
           </div>
         </div>
       </div>
