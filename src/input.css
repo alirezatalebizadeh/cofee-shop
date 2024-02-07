@@ -173,7 +173,22 @@
 
   .swiper-button-next-custom,
   .swiper-button-prev-custom {
-    @apply flex-center w-9 h-9 md:w-10 md:h-10 rounded-full hover:bg-gray-300 dark:hover:bg-white dark:bg-zinc-700 shadow-normal dark:hover:text-zinc-700;
+    @apply flex-center bg-white w-9 h-9 md:w-10 md:h-10 rounded-full hover:bg-gray-300 dark:hover:bg-white dark:bg-zinc-700 shadow-normal dark:hover:text-zinc-700 transition-all;
+  }
+  /* !Coffee-Banner */
+
+  .coffee-banner-container {
+    background: linear-gradient(90deg, #10b981 0%, #059669 100%);
+    box-shadow: 0px 1px 10px 0px rgba(0, 0, 0, 0.05);
+    @apply flex items-center justify-between flex-col gap-y-[35px] lg:flex-row lg:h-36 rounded-2xl pt-[34px] pb-8 px-3 sm:py-[25px] md:py-[23px] md:px-[44px];
+  }
+  .coffee-banner-item-box {
+    @apply h-[72px] w-[72px] sm:w-20 sm:h-20 md:h-[98px] md:w-[98px] bg-white rounded-2xl;
+  }
+  .coffee-banner-btn {
+    @apply flex items-center w-[90px] sm:w-[100px] md:w-[110px] text-white font-DanaMedium text-xs/normal md:text-sm/normal py-1 pr-[6px] md:mt-2 md:py-[6px] md:pr-[10px] -mr-[7px] sm:-mr-[12px] md:-mr-[12px] mt-1;
+    border-radius: 100px;
+    background: linear-gradient(270deg, #fdba74 0%, #fed7aa 100%);
   }
 }
 
