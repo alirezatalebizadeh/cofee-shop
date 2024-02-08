@@ -1182,6 +1182,10 @@ video {
   left: -50%;
 }
 
+.right-1\/2 {
+  right: 50%;
+}
+
 .z-20 {
   z-index: 20;
 }
