@@ -2431,6 +2431,10 @@ video {
   display: inline-block;
 }
 
+:is(.dark .dark\:inline) {
+  display: inline;
+}
+
 :is(.dark .dark\:inline-flex) {
   display: inline-flex;
 }
