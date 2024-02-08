@@ -2504,10 +2504,6 @@ video {
     margin-bottom: 7rem;
   }
 
-  .md\:mb-\[10px\] {
-    margin-bottom: 10px;
-  }
-
   .md\:mb-\[66px\] {
     margin-bottom: 66px;
   }
@@ -2790,10 +2786,6 @@ video {
 }
 
 @media (min-width: 1024px) {
-  .lg\:mr-\[10px\] {
-    margin-right: 10px;
-  }
-
   .lg\:w-30 {
     width: 7.5rem;
   }
@@ -2821,16 +2813,12 @@ video {
     padding-right: 2.5rem;
   }
 
-  .lg\:pr-5 {
-    padding-right: 1.25rem;
+  .lg\:pr-4 {
+    padding-right: 1rem;
   }
 
   .lg\:pt-48 {
     padding-top: 12rem;
-  }
-
-  .lg\:pr-4 {
-    padding-right: 1rem;
   }
 
   .lg\:leading-6 {
