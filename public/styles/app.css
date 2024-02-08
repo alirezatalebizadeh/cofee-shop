@@ -3045,6 +3045,11 @@ video {
     line-height: 1.5;
   }
 
+  .md\:text-sm\/7 {
+    font-size: 0.875rem;
+    line-height: 1.75rem;
+  }
+
   .md\:leading-\[62px\] {
     line-height: 62px;
   }
