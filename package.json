@@ -6,3 +6,5 @@
     "build": "npx tailwindcss -i ./src/input.css -o ./public/styles/app.css --watch"
   }
 }
+
+// npx tailwindcss -i ./src/input.css -o ./public/styles/final.css --minify===> to minify css file
