@@ -7,4 +7,3 @@
   }
 }
 
-// npx tailwindcss -i ./src/input.css -o ./public/styles/final.css --minify===> to minify css file
