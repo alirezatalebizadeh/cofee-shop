@@ -1595,10 +1595,6 @@ video {
   width: 1px;
 }
 
-.min-w-\[129px\] {
-  min-width: 129px;
-}
-
 .min-w-\[191px\] {
   min-width: 191px;
 }
@@ -2193,11 +2189,6 @@ video {
   font-family: Morabba Medium;
 }
 
-.text-2xl {
-  font-size: 1.5rem;
-  line-height: 2rem;
-}
-
 .text-2xl\/7 {
   font-size: 1.5rem;
   line-height: 1.75rem;
@@ -2278,6 +2269,11 @@ video {
   line-height: 1.75rem;
 }
 
+.text-sm\/\[20px\] {
+  font-size: 0.875rem;
+  line-height: 20px;
+}
+
 .text-sm\/\[28px\] {
   font-size: 0.875rem;
   line-height: 28px;
@@ -2316,51 +2312,6 @@ video {
 .text-xs\/normal {
   font-size: 0.75rem;
   line-height: 1.5;
-}
-
-.text-xl\/\[18px\] {
-  font-size: 1.25rem;
-  line-height: 18px;
-}
-
-.text-base\/\[\] {
-  font-size: 1rem;
-  line-height: 1.5rem;
-}
-
-.text-base\/\[20\] {
-  font-size: 1rem;
-  line-height: 20;
-}
-
-.text-base\/\[20px\] {
-  font-size: 1rem;
-  line-height: 20px;
-}
-
-.text-xl\/\[20px\] {
-  font-size: 1.25rem;
-  line-height: 20px;
-}
-
-.text-\[22px\]\/\[20px\] {
-  font-size: 22px;
-  line-height: 20px;
-}
-
-.text-\[23px\]\/\[20px\] {
-  font-size: 23px;
-  line-height: 20px;
-}
-
-.text-\[24px\]\/\[20px\] {
-  font-size: 24px;
-  line-height: 20px;
-}
-
-.text-sm\/\[20px\] {
-  font-size: 0.875rem;
-  line-height: 20px;
 }
 
 .leading-6 {
@@ -3230,11 +3181,6 @@ video {
   .md\:text-xl\/normal {
     font-size: 1.25rem;
     line-height: 1.5;
-  }
-
-  .md\:text-2xl\/8 {
-    font-size: 1.5rem;
-    line-height: 2rem;
   }
 
   .md\:leading-\[62px\] {
